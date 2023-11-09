@@ -37,11 +37,11 @@ module.exports = {
         ]
       },
 
-     {
+  
+      {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, "css-loader"]
       }
-      
     ],
   
   },
@@ -69,7 +69,7 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
       patterns: [
-        { from: './src/assets', to: 'assets' },
+        { from: __dirname + 'src/assets', to: 'assets' },
       ]
     })
   ]
