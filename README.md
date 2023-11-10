@@ -16,7 +16,7 @@ Tic Tac Toe is not only a game but also a challenge for players' minds. Whether 
 
 
 ## Playing the game
-How to play? </br>
+#### How to play? </br>
 3x3 game board:
 The game board is a 3 by 3 square where players place symbols - "X" or "O" in order to form three consecutive symbols vertically, horizontally or diagonally.
 Choose between Three Options:
