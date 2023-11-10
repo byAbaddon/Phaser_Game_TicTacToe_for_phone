@@ -26,7 +26,6 @@ module.exports = {
         test: /\.(gif|png|jpe?g|svg|xml|glsl)$/i,
         use: "file-loader"
       },
-
       {
         test: /\.html$/,
         use: [
@@ -36,14 +35,11 @@ module.exports = {
           }
         ]
       },
-
-  
       {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, "css-loader"]
       }
     ],
-  
   },
   plugins: [
     new CleanWebpackPlugin({
@@ -69,8 +65,8 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
       patterns: [
-        { from: __dirname + 'src/assets', to: 'assets' },
-      ]
-    })
+        { from: path.resolve(__dirname, '../src/assets'), to: 'assets' },
+      ],
+    }),
   ]
 };
